@@ -1,0 +1,40 @@
+# # neocomplete
+# [[plugins]]
+# repo = 'Shougo/neocomplete.vim'
+# if = 'has("lua")'
+# on_i = 1
+# depends = ['context_filetype.vim']
+# hook_add = '''
+# source ~/vimfiles/plugins/neocomplete.rc.vim
+# '''
+
+# toml syntax
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+# jedi-vim
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+on_ft = 'py'
+hook_add = '''
+source ~/vimfiles/plugins/jedi.rc.vim
+'''
+
+# neosnippet
+[[plugins]]
+repo = 'Shougo/neosnippet'
+depends = ['neosnippet-snippets']
+on_i = 1
+on_ft = ['snippet']
+hook_add = '''
+source ~/vimfiles/plugins/neosnippets.rc.vim
+'''
+
+# unite-mark
+[[plugins]]
+repo = 'tacroe/unite-mark'
+
+# ag
+[[plugins]]
+repo = 'rking/ag.vim'

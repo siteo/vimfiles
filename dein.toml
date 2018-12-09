@@ -1,0 +1,103 @@
+# dein
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# vim-precious
+[[plugins]]
+repo = 'osyo-manga/vim-precious'
+depends = ['context_filetype.vim']
+
+# context_filetype
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+# denite
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+if = 'has("nvim")'
+
+# unite
+[[plugins]]
+repo = 'Shougo/unite.vim.git'
+depends = 'neomru.vim'
+hook_add = '''
+source ~/vimfiles/plugins/unite.rc.vim
+'''
+
+# neomru
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_source = 'unite.vim'
+
+# vim-unite-giti
+[[plugins]]
+repo = 'kmnk/vim-unite-giti'
+
+# vim-intent-guides
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides.git'
+hook_add = '''
+source ~/vimfiles/plugins/indent-guides.rc.vim
+'''
+
+# nerdtree
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+source ~/vimfiles/plugins/nerdtree.rc.vim
+'''
+
+# vim-submode
+[[plugins]]
+repo = 'kana/vim-submode'
+hook_add = '''
+source ~/vimfiles/plugins/submode.rc.vim
+'''
+
+# # airline 
+# [[plugins]] 
+# repo = 'vim-airline/vim-airline'
+# depends = ['vim-airline-themes', 'vim-fugitive']
+# hook_add = '''
+# source ~/vimfiles/plugins/airline.rc.vim
+# '''
+
+# [[plugins]] # airline theme
+# repo = 'vim-airline/vim-airline-themes'
+# depends = 'vim-airline'
+# hook_add = '''
+# let g:airline_theme='jellybeans'
+# '''
+
+# git branch
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_add = '''
+source ~/vimfiles/plugins/vim-fugitive.rc.vim
+'''
+
+# vim-gitgutter
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+# neosnippet-snippets
+[[plugins]] # snipet
+repo = 'Shougo/neosnippet-snippets'
+
+# undotree
+[[plugins]]
+repo = 'mbbill/undotree'
+hook_add = '''
+source ~/vimfiles/plugins/undotree.rc.vim
+'''
+
+# vim-signature
+[[plugins]]
+repo = 'kshenoy/vim-signature'
+
+# vim-vue
+[[plugins]]
+repo = 'posva/vim-vue'
+hook_add = '''
+source ~/vimfiles/plugins/vim-vue.rc.vim
+'''
