@@ -11,11 +11,6 @@ depends = ['context_filetype.vim']
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
-# denite
-[[plugins]]
-repo = 'Shougo/denite.nvim'
-if = 'has("nvim")'
-
 # unite
 [[plugins]]
 repo = 'Shougo/unite.vim.git'
@@ -29,22 +24,18 @@ source ~/vimfiles/plugins/unite.rc.vim
 repo = 'Shougo/neomru.vim'
 on_source = 'unite.vim'
 
-# vim-unite-giti
+# nerdtree
 [[plugins]]
-repo = 'kmnk/vim-unite-giti'
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+source ~/vimfiles/plugins/nerdtree.rc.vim
+'''
 
 # vim-intent-guides
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides.git'
 hook_add = '''
 source ~/vimfiles/plugins/indent-guides.rc.vim
-'''
-
-# nerdtree
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-hook_add = '''
-source ~/vimfiles/plugins/nerdtree.rc.vim
 '''
 
 # vim-submode
@@ -54,20 +45,20 @@ hook_add = '''
 source ~/vimfiles/plugins/submode.rc.vim
 '''
 
-# # airline 
-# [[plugins]] 
-# repo = 'vim-airline/vim-airline'
-# depends = ['vim-airline-themes', 'vim-fugitive']
-# hook_add = '''
-# source ~/vimfiles/plugins/airline.rc.vim
-# '''
+# airline 
+[[plugins]] 
+repo = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes', 'vim-fugitive']
+hook_add = '''
+source ~/vimfiles/plugins/airline.rc.vim
+'''
 
-# [[plugins]] # airline theme
-# repo = 'vim-airline/vim-airline-themes'
-# depends = 'vim-airline'
-# hook_add = '''
-# let g:airline_theme='jellybeans'
-# '''
+[[plugins]] # airline theme
+repo = 'vim-airline/vim-airline-themes'
+depends = 'vim-airline'
+hook_add = '''
+let g:airline_theme='jellybeans'
+'''
 
 # git branch
 [[plugins]]
@@ -75,6 +66,10 @@ repo = 'tpope/vim-fugitive'
 hook_add = '''
 source ~/vimfiles/plugins/vim-fugitive.rc.vim
 '''
+
+# vim-unite-giti
+[[plugins]]
+repo = 'kmnk/vim-unite-giti'
 
 # vim-gitgutter
 [[plugins]]

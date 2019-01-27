@@ -1,12 +1,12 @@
-# # neocomplete
-# [[plugins]]
-# repo = 'Shougo/neocomplete.vim'
-# if = 'has("lua")'
-# on_i = 1
-# depends = ['context_filetype.vim']
-# hook_add = '''
-# source ~/vimfiles/plugins/neocomplete.rc.vim
-# '''
+# neocomplete
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+if = 'has("lua")'
+on_i = 1
+depends = ['context_filetype.vim']
+hook_add = '''
+source ~/vimfiles/plugins/neocomplete.rc.vim
+'''
 
 # toml syntax
 [[plugins]]
@@ -30,6 +30,10 @@ on_ft = ['snippet']
 hook_add = '''
 source ~/vimfiles/plugins/neosnippets.rc.vim
 '''
+
+# neosnippet-snippets
+[[plugins]] # snipet
+repo = 'Shougo/neosnippet-snippets'
 
 # unite-mark
 [[plugins]]
