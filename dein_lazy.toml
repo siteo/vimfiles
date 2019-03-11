@@ -42,3 +42,8 @@ repo = 'tacroe/unite-mark'
 # ag
 [[plugins]]
 repo = 'rking/ag.vim'
+
+# emmet
+[[plugins]]
+repo = 'mattn/emmet-vim'
+on_ft = 'html'
